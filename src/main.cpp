@@ -35,7 +35,6 @@ void start_work(ConcurrentLinkedList *list,
     std::cout << "Thread with ID " << std::this_thread::get_id() << " Has started doing work" << std::endl;
     while(cards->size() < NUM_GUESTS) {
         int task_type = task_dist(*rng);
-        std::cout << "Thread with ID " << std::this_thread::get_id() << " has started task: " << task_type << std::endl;
         switch (task_type) {
             case ADD_PRESENT: {
                 mutex.lock();

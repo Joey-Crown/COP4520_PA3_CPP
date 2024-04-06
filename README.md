@@ -10,6 +10,9 @@ And Run the program with:
 ./cmake-build-debug/COP4520_PA3_CPP
 ```
 
+I have some last minute bugs that I think might be due to the way I handle random number generation. As I'll explain I 
+wasted a lot of time on this project thinking I could do it in Rust, which turned out to be more trouble than it's worth.
+
 # Problem 1: The Birthday Presents Party
 
 I originally tried to complete this problem in Rust but after some difficulties with trying to implement a doubly-linked
@@ -29,8 +32,8 @@ through the list and does a real removal of all nodes marked as logically delete
 The program runs and threads write cards after a logical deletion task, and Problem 1 finishes execution after all gifts
 have cards written for them.
 
-Problem 1 takes about 20 seconds on my system utilizing 8 threads. From my research a lock-free approach would be more
-performant but much more challenging to implement well
+Problem 1 takes about 60 seconds on my system utilizing 8 threads. From my research a lock-free approach would be more
+performant but much more challenging to implement well. Also, my console outputs significantly reduce performance
 
 # Problem 2: Atmospheric Temperature Reading Module
 
