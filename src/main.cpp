@@ -6,7 +6,7 @@
 #include <algorithm>
 #include "con_linked_list.h"
 
-#define NUM_GUESTS 500000
+#define NUM_GUESTS 20
 #define HOURS 30
 #define NUM_THREADS 8
 
